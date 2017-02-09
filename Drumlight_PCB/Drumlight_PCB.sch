@@ -875,7 +875,7 @@ $EndComp
 Wire Wire Line
 	7600 3950 7600 3850
 Text Label 7600 3850 0    60   ~ 0
-VIN
+Vin
 Wire Wire Line
 	7100 3950 7050 3950
 Connection ~ 7050 3950
@@ -891,4 +891,86 @@ Wire Wire Line
 	2050 2650 2150 2650
 Wire Wire Line
 	2050 2050 2150 2050
+$Comp
+L LED_RGB D3
+U 1 1 589C68FC
+P 1050 1750
+F 0 "D3" V 1096 1420 50  0000 R CNN
+F 1 "LED_RGB" V 1005 1420 50  0000 R CNN
+F 2 "LEDs:LED_RGB_PLCC-6" H 200 0   50  0001 C CNN
+F 3 "" H 200 0   50  0001 C CNN
+	1    1050 1750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	850  1950 850  2200
+Wire Wire Line
+	850  2200 1250 2200
+Wire Wire Line
+	1050 2200 1050 1950
+Wire Wire Line
+	1250 2200 1250 1950
+Connection ~ 1050 2200
+$Comp
+L GND #PWR022
+U 1 1 589C78E3
+P 1050 2200
+F 0 "#PWR022" H 1050 1950 50  0001 C CNN
+F 1 "GND" H 1050 2050 50  0000 C CNN
+F 2 "" H 1050 2200 50  0000 C CNN
+F 3 "" H 1050 2200 50  0000 C CNN
+	1    1050 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R10
+U 1 1 589C79B9
+P 1250 1300
+F 0 "R10" V 1043 1300 50  0000 C CNN
+F 1 "R" V 1134 1300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V -5020 -2150 50  0001 C CNN
+F 3 "" H -4950 -2150 50  0001 C CNN
+	1    1250 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R9
+U 1 1 589C7BFE
+P 1050 1300
+F 0 "R9" V 843 1300 50  0000 C CNN
+F 1 "R" V 934 1300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V -5220 -2150 50  0001 C CNN
+F 3 "" H -5150 -2150 50  0001 C CNN
+	1    1050 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 589C7DCA
+P 850 1300
+F 0 "R8" V 643 1300 50  0000 C CNN
+F 1 "R" V 734 1300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V -5420 -2150 50  0001 C CNN
+F 3 "" H -5350 -2150 50  0001 C CNN
+	1    850  1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  1450 850  1550
+Wire Wire Line
+	1050 1450 1050 1550
+Wire Wire Line
+	1250 1450 1250 1550
+Wire Wire Line
+	850  1150 850  1000
+Wire Wire Line
+	1050 1150 1050 1000
+Wire Wire Line
+	1250 1150 1250 1000
+Text Label 1250 1000 0    60   ~ 0
+3(**)
+Text Label 1050 1000 0    60   ~ 0
+5(**)
+Text Label 850  1000 0    60   ~ 0
+6(**)
 $EndSCHEMATC
