@@ -2,10 +2,10 @@
 
 // These constants won't change.  They're used to give names
 // to the pins used:
-const int potPin = A0;  // Analog input pin that the potentiometer is attached to
-const int piezoPin = A1;  // Analog input pin that the piezo is attached to
+const int potPin = A7;  // Analog input pin that the potentiometer is attached to
+const int piezoPin = A3;  // Analog input pin that the piezo is attached to
 const unsigned long maxIn = 1023*1023; //Maximum range on multiplied input
-const int analogOutPin = 9; // Analog output pin that the LED is attached to
+const int analogOutPin = 13; // Analog output pin that the LED is attached to
 
 unsigned int potValue = 0;        // value read from the pot
 int piezoValue = 0;     // value from the piezo
@@ -54,3 +54,4 @@ void loop() {
   // after the last reading:
   delay(2);
 }
+
