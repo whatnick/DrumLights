@@ -47,7 +47,7 @@ void loop() {
   }
 
   // print the results to the serial monitor:
-  Serial.println(diffPiezo);
+  //Serial.println(diffPiezo);
 
   // wait 2 milliseconds before the next loop
   // for the analog-to-digital converter to settle
