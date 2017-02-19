@@ -28,6 +28,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:switches
 LIBS:Drumlight_PCB-cache
 EELAYER 26 0
 EELAYER END
@@ -892,17 +893,13 @@ F 5 "MBR120VLSFT3G" H 7250 3950 60  0001 C CNN "manf#"
 	1    7250 3950
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	7600 3950 7600 3850
-Text Label 7600 3850 0    60   ~ 0
+Text Label 8100 3850 0    60   ~ 0
 Vin
 Wire Wire Line
 	7100 3950 7050 3950
 Connection ~ 7050 3950
 Text Label 3150 1150 0    60   ~ 0
 +BATT
-Wire Wire Line
-	7400 3950 7600 3950
 Wire Wire Line
 	6200 1650 6200 2650
 Wire Wire Line
@@ -995,4 +992,22 @@ Text Label 1050 1000 0    60   ~ 0
 5(**)
 Text Label 850  1000 0    60   ~ 0
 6(**)
+$Comp
+L SW_SPST SW1
+U 1 1 58A9A41F
+P 7700 3950
+F 0 "SW1" H 7700 4185 50  0000 C CNN
+F 1 "SW_SPST" H 7700 4094 50  0000 C CNN
+F 2 "Buttons_Switches_SMD:SW_DIP_x1_W5.08mm_Slide_Copal_CHS-A" H 600 -1150 50  0001 C CNN
+F 3 "" H 600 -1150 50  0001 C CNN
+F 4 "CHS-01TA" H 7700 3950 60  0001 C CNN "manf#"
+	1    7700 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 3950 7500 3950
+Wire Wire Line
+	7900 3950 8100 3950
+Wire Wire Line
+	8100 3950 8100 3850
 $EndSCHEMATC
