@@ -1,4 +1,4 @@
-(kicad_pcb (version 20170123) (host pcbnew "(2017-01-30 revision 9627f06)-makepkg")
+(kicad_pcb (version 20170123) (host pcbnew "(2017-02-28 revision fd4e2b042)-makepkg")
 
   (general
     (links 57)
@@ -352,9 +352,9 @@
       (net 47 "Net-(PZO1-Pad1)"))
     (pad 2 thru_hole oval (at 2 0) (size 1.2 1.7) (drill 0.7) (layers *.Cu *.Mask)
       (net 4 GND))
-    (model :Git3D:Connectors_JST.3dshapes/JST_PH_S2B-PH-K_02x2.00mm_Angled.wrl
+    (model ${KIPRJMOD}/Drumlights.3dshapes/JST_PH_S2B-PH-K_02x2.00mm_Angled.STEP
       (at (xyz 0.3405511811023622 0.1062992125984252 0.2362204724409449))
-      (scale (xyz 0.39 0.39 0.39))
+      (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
     )
   )
@@ -406,9 +406,9 @@
       (net 4 GND))
     (pad 1 thru_hole rect (at 0 0) (size 1.2 1.7) (drill 0.7) (layers *.Cu *.Mask)
       (net 36 +BATT))
-    (model :Git3D:Connectors_JST.3dshapes/JST_PH_S2B-PH-K_02x2.00mm_Angled.wrl
+    (model ${KIPRJMOD}/Drumlights.3dshapes/JST_PH_S2B-PH-K_02x2.00mm_Angled.STEP
       (at (xyz 0.3405511811023622 0.1062992125984252 0.2362204724409449))
-      (scale (xyz 0.39 0.39 0.39))
+      (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
     )
   )
