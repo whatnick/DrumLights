@@ -1,4 +1,4 @@
-update=20-Feb-17 12:15:11 AM
+update=11-Mar-17 3:19:37 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,3 +59,4 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=C:/Program Files/KiCad/share/kicad/library/switches
+LibName31=led_rgb

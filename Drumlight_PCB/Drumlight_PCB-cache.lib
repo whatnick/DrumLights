@@ -289,9 +289,9 @@ F1 "LED_RGB" 0 -350 50 H V C CNN
 F2 "" 0 -50 50 H I C CNN
 F3 "" 0 -50 50 H I C CNN
 DRAW
-T 0 -75 -250 50 0 0 0 B Normal 0 C C
+T 0 -75 150 50 0 0 0 B Normal 0 C C
 T 0 -75 -50 50 0 0 0 G Normal 0 C C
-T 0 -75 150 50 0 0 0 R Normal 0 C C
+T 0 -75 -250 50 0 0 0 R Normal 0 C C
 S 50 -50 50 50 0 1 0 N
 S 50 50 50 50 0 1 0 N
 S 50 150 50 250 0 1 0 N
