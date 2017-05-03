@@ -1,3 +1,6 @@
+// RunningAverage class 
+// based on RunningAverage library for Arduino
+// source:  http://playground.arduino.cc/Main/RunningAverage
 #include "RunningAverage.h"
 
 // These constants won't change.  They're used to give names
