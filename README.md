@@ -51,6 +51,8 @@ This design was featured and used in the **Adelaide Fringe Festival parade**.
 
 The firmware is verified to compile with `arduino:avr` 1.8.8 (Nano) and `arduino:esp32` 2.0.18 (`arduino:esp32:nano_nora`).
 
+See [docs/SOURCING_AND_BUSINESS_CASE.md](docs/SOURCING_AND_BUSINESS_CASE.md) for part sourcing, platform options (Nano, ESP32, STM32, RISC-V), BOM cost and pricing.
+
 ## Fleet control with ESP32-S3 (planned)
 
 The shield uses the Arduino Nano footprint, so a Nano-format ESP32-S3 board can plug in to add wireless sync across many drums (ESP-NOW broadcast from a leader, or BLE/Wi-Fi). Candidates:
