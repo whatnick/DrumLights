@@ -24,16 +24,36 @@ This design was featured and used in the **Adelaide Fringe Festival parade**.
 | Path | Contents |
 | --- | --- |
 | `DrumLights/DrumLights.ino` | Arduino firmware (needs the [RunningAverage](http://playground.arduino.cc/Main/RunningAverage) library) |
-| `Drumlight_PCB/` | KiCad project for the Nano shield (schematic, PCB, footprints, 3D models) |
+| `Drumlight_PCB/` | KiCad 10 project for the Nano shield (schematic, PCB, footprints, 3D models) |
 
 ![Schematic](Drumlight_PCB/drumlights_schema.png)
 
 ## Getting started
 
-1. Install the Arduino IDE and the `RunningAverage` library.
-2. Open `DrumLights/DrumLights.ino`, select *Arduino Nano*, and upload.
+1. Install [`arduino-cli`](https://arduino.github.io/arduino-cli/) (or the Arduino IDE) and the `RunningAverage` library.
+2. Build and upload:
+
+   ```sh
+   arduino-cli lib install RunningAverage
+   arduino-cli core install arduino:avr
+   arduino-cli compile -b arduino:avr:nano DrumLights
+   arduino-cli upload  -b arduino:avr:nano -p <PORT> DrumLights
+   ```
+
 3. Fit the shield, connect the piezo, LED strip and a 5 V supply.
 4. Tune `noise_thresh` and the delay pot for your drum.
+
+The firmware is verified to compile with `arduino:avr` 1.8.8 (Nano) and `arduino:esp32` 2.0.18 (`arduino:esp32:nano_nora`).
+
+## Fleet control with ESP32-S3 (planned)
+
+The shield uses the Arduino Nano footprint, so a Nano-format ESP32-S3 board can plug in to add wireless sync across many drums (ESP-NOW broadcast from a leader, or BLE/Wi-Fi). Candidates:
+
+- [Arduino Nano ESP32](https://docs.arduino.cc/hardware/nano-esp32/) (ABX00083, ESP32-S3, u-blox NORA-W106) – exact Nano pinout, supported by the `arduino:esp32` core. Pins `A0`/`A1`/`D3`/`D5`/`D6` map as on the Nano; the firmware sets the ADC to 10-bit on ESP32 so thresholds carry over. Note it is a 3.3 V logic board (MOSFET gates still switch with these logic levels, but the 5 V pin and the on-board op-amp supply should be re-checked).
+- Third-party "ESP32-S3-Nano" boards in the same footprint – check the pinout against the Arduino Nano ESP32 before use.
+- Other ESP32 Nano-format boards (e.g. OLIMEX-style ESP32 Nano modules) – pinouts vary, so verify before use.
+
+Progress is tracked in the issues on the project board.
 
 ## Similar open-source projects
 

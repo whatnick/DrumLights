@@ -7,7 +7,6 @@
 // to the pins used:
 const int potPin = A0;  // Analog input pin that the potentiometer is attached to
 const int piezoPin = A1;  // Analog input pin that the piezo is attached to
-const unsigned long maxIn = 1023*1023; //Maximum range on multiplied input
 const int green_out = 3; // Analog output pin that the LED is attached to
 const int red_out = 5; // Analog output pin that the LED is attached to
 const int blue_out = 6; // Analog output pin that the LED is attached to
@@ -16,15 +15,18 @@ int red_val,green_val,blue_val;
 
 unsigned int potValue = 0;        // value read from the pot
 int piezoValue = 0;     // value from the piezo
-RunningAverage smoothPiezo(30);; //Smooth out piezo values and crosstalk
+RunningAverage smoothPiezo(30); //Smooth out piezo values and crosstalk
 
 int ledDelay = 0; //Light on time
 int noise_thresh = 400;
-long prevMillis = 0; //previous turn on time for light delay
+unsigned long prevMillis = 0; //previous turn on time for light delay
 
 void setup() {
   // initialize serial communications at 9600 bps:
   Serial.begin(9600);
+#if defined(ARDUINO_ARCH_ESP32)
+  analogReadResolution(10); // match the 10-bit range of AVR boards so thresholds are portable
+#endif
   pinMode(green_out, OUTPUT);
   pinMode(red_out, OUTPUT);
   pinMode(blue_out, OUTPUT);
@@ -44,7 +46,7 @@ void loop() {
   int diffPiezo = abs(piezoValue-smoothPiezo.getFastAverage());
   smoothPiezo.addValue(piezoValue);
   
-  long currentMillis = millis();
+  unsigned long currentMillis = millis();
   long beat_time = 0;
   if(diffPiezo > noise_thresh )
   {
