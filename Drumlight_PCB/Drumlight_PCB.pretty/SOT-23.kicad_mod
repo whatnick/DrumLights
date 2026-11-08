@@ -3,7 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(layer "F.Cu")
-	(descr "SOT-23, Standard")
+	(descr "SOT-23 for BSS306N; Custom pad order D(1,lone) G(2) S(3), NOT the JEDEC pin order (G1 S2 D3): pad 1 carries the drain.")
 	(tags "SOT-23")
 	(property "Reference" "REF**"
 		(at 1.254 1.27 90)

@@ -7,12 +7,12 @@ Market, competitor and third-party board figures come from web searches. They ar
 
 | Ref | Problem | Action |
 | --- | --- | --- |
-| C2, C3 | `F981A475MMA` tantalum is **Obsolete** at Mouser, with 0 stock | Replace with `CL10A475KO8NNNC` (4.7 µF 16 V X5R 0603, LCSC C19666, JLC basic, 3.85 M in stock). The footprint is unchanged. Check DC-bias derating on the 5 V and BATT rails. |
+| C2, C3 | `F981A475MMA` tantalum was **Obsolete** at Mouser | **Done:** now `CL10A475KO8NNNC` (4.7 µF 16 V X5R 0603, LCSC C19666, JLC basic, 3.85 M in stock; Mouser stock was 0 on 2026-11-08, with the 6.3 V `CL10A475KQ8NNNC` in stock as a fallback only for sub-5 V use). The footprint is unchanged. Check DC-bias derating on the 5 V and BATT rails. |
 | D2 | `MBR120VLSFT3G` is stocked (Mouser 738, $0.40 at 100) but not on JLC | Keep it. Alternative: `SS14-E3/61T` (40 V 1 A, Mouser 249k in stock). It is SMA, so it needs a new footprint. |
 | D3 | `LRTB GFTM` is not found at Mouser or DigiKey | Pick a stocked RGB PLCC-6 and match its pinout to the D3 footprint. JLC lists only a PLCC-4 CREE part. **Open item.** |
 | U1 | `TLV2771CDBVR` is stocked at Mouser (6073 in stock; $2.34 at 1, $1.54 at 100) | OK. The I-grade `TLV2771IDBVR` is the JLC route (LCSC C130906). |
 | RV1 | `3339P-1-103LF` costs $3.70 at 100 | The most expensive passive on the board. Consider a ~$0.30 SMD trimmer. |
-| SW1 | `IKD0103101` has 0 stock at Mouser and a 1300-piece minimum at DigiKey | Replace it with a stocked slide switch or a solder jumper. |
+| SW1 | `IKD0103101` had 0 stock at Mouser and a 1300-piece minimum at DigiKey | **Done:** now Nidec/Copal `CHS-01TB` (SMD gull-wing slide switch, Mouser 9346 in stock, $0.78 at 100; LCSC C2680613). It is the same Copal CHS family as the existing footprint, but check the pad span against the datasheet before ordering boards. |
 
 ## 2. Shield BOM cost (Nano shield only, no MCU board)
 
@@ -113,7 +113,7 @@ At $40 with a $12–$15 cost, the gross margin is about 60–65% before Tindie a
 
 ## 8. Next steps
 
-1. Replace C2/C3 with `CL10A475KO8NNNC` and update the BOM (a one-line change in the sourcing table).
-2. Replace SW1 and RV1 with cheaper stocked parts. Pick and verify an RGB PLCC-6 for D3.
+1. ~~Replace C2/C3~~ Done (`CL10A475KO8NNNC`).
+2. SW1 is done (`CHS-01TB`). Replace RV1 with a cheaper stocked part. Pick and verify an RGB PLCC-6 for D3.
 3. Validate the market numbers: survey 10 local bands about drum count, willingness to pay and battery or runtime needs.
 4. Prototype the ESP32-C3/C6 on-board fleet node (link to the ESP-NOW roadmap issue #9).

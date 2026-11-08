@@ -3135,7 +3135,7 @@
 				)
 			)
 		)
-		(property "Description" "4.7uF 10V tantalum 0603"
+		(property "Description" "4.7uF 16V X5R 0603"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -3146,7 +3146,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "KYOCERA AVX"
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3158,7 +3158,7 @@
 				)
 			)
 		)
-		(property "MPN" "F981A475MMA"
+		(property "MPN" "CL10A475KO8NNNC"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3170,7 +3170,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C1953041"
+		(property "LCSC" "C19666"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3182,7 +3182,7 @@
 				)
 			)
 		)
-		(property "manf#" "F981A475MMA"
+		(property "manf#" "CL10A475KO8NNNC"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3194,7 +3194,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=F981A475MMA"
+		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=CL10A475KO8NNNC"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3206,7 +3206,7 @@
 				)
 			)
 		)
-		(property "Mouser" "https://www.mouser.com/c/?q=F981A475MMA"
+		(property "Mouser" "https://www.mouser.com/c/?q=CL10A475KO8NNNC"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3387,7 +3387,7 @@
 				)
 			)
 		)
-		(property "Description" "4.7uF 10V tantalum 0603"
+		(property "Description" "4.7uF 16V X5R 0603"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -3398,7 +3398,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "KYOCERA AVX"
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3410,7 +3410,7 @@
 				)
 			)
 		)
-		(property "MPN" "F981A475MMA"
+		(property "MPN" "CL10A475KO8NNNC"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3422,7 +3422,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C1953041"
+		(property "LCSC" "C19666"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3434,7 +3434,7 @@
 				)
 			)
 		)
-		(property "manf#" "F981A475MMA"
+		(property "manf#" "CL10A475KO8NNNC"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3446,7 +3446,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=F981A475MMA"
+		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=CL10A475KO8NNNC"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3458,7 +3458,7 @@
 				)
 			)
 		)
-		(property "Mouser" "https://www.mouser.com/c/?q=F981A475MMA"
+		(property "Mouser" "https://www.mouser.com/c/?q=CL10A475KO8NNNC"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7174,7 +7174,7 @@
 		(layer "F.Cu")
 		(uuid "00000000-0000-0000-0000-000058c39d37")
 		(at 143.526 81.296 90)
-		(descr "SOT-23, Standard")
+		(descr "SOT-23 for BSS306N; Custom pad order D(1,lone) G(2) S(3), NOT the JEDEC pin order (G1 S2 D3): pad 1 carries the drain.")
 		(tags "SOT-23")
 		(property "Reference" "Q1"
 			(at 1.254 1.27 180)
@@ -7187,7 +7187,7 @@
 				)
 			)
 		)
-		(property "Value" "Q_NMOS_DGS"
+		(property "Value" "BSS306N"
 			(at -3.048 -0.508 180)
 			(layer "F.Fab")
 			(uuid "c4aabcad-7abf-49d7-ad93-670190e74b53")
@@ -7463,7 +7463,7 @@
 		(layer "F.Cu")
 		(uuid "00000000-0000-0000-0000-000058c39d49")
 		(at 151.196 81.296 90)
-		(descr "SOT-23, Standard")
+		(descr "SOT-23 for BSS306N; Custom pad order D(1,lone) G(2) S(3), NOT the JEDEC pin order (G1 S2 D3): pad 1 carries the drain.")
 		(tags "SOT-23")
 		(property "Reference" "Q3"
 			(at 1.254 1.27 180)
@@ -7476,7 +7476,7 @@
 				)
 			)
 		)
-		(property "Value" "Q_NMOS_DGS"
+		(property "Value" "BSS306N"
 			(at -3.048 -0.508 180)
 			(layer "F.Fab")
 			(uuid "1412fc52-52cc-465e-bb98-e4017426335f")
@@ -7752,7 +7752,7 @@
 		(layer "F.Cu")
 		(uuid "00000000-0000-0000-0000-000058c39d5b")
 		(at 147.386 81.28 90)
-		(descr "SOT-23, Standard")
+		(descr "SOT-23 for BSS306N; Custom pad order D(1,lone) G(2) S(3), NOT the JEDEC pin order (G1 S2 D3): pad 1 carries the drain.")
 		(tags "SOT-23")
 		(property "Reference" "Q2"
 			(at 1.254 1.27 180)
@@ -7765,7 +7765,7 @@
 				)
 			)
 		)
-		(property "Value" "Q_NMOS_DGS"
+		(property "Value" "BSS306N"
 			(at -3.048 -0.508 180)
 			(layer "F.Fab")
 			(uuid "ccba59f5-71fb-4ba1-a804-8de1a43e40ae")
@@ -8473,7 +8473,7 @@
 				)
 			)
 		)
-		(property "Description" "Single-pole slide DIP switch"
+		(property "Description" "1-position SPST slide DIP switch, SMD gull wing, 1.27mm pitch"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -8484,7 +8484,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Apem"
+		(property "Manufacturer" "Nidec"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -8496,7 +8496,7 @@
 				)
 			)
 		)
-		(property "MPN" "IKD0103101"
+		(property "MPN" "CHS-01TB"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -8508,7 +8508,19 @@
 				)
 			)
 		)
-		(property "manf#" "IKD0103101"
+		(property "LCSC" "C2680613"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1601b98b-feac-4770-9723-d95096ab31a9")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "manf#" "CHS-01TB"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -8520,7 +8532,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=IKD0103101"
+		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=CHS-01TB"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -8532,7 +8544,7 @@
 				)
 			)
 		)
-		(property "Mouser" "https://www.mouser.com/c/?q=IKD0103101"
+		(property "Mouser" "https://www.mouser.com/c/?q=CHS-01TB"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)

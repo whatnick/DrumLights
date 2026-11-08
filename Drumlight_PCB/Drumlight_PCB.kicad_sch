@@ -6175,7 +6175,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Q_NMOS_DGS"
+		(property "Value" "BSS306N"
 			(at 57.277 61.087 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6798,7 +6798,7 @@
 				)
 			)
 		)
-		(property "Description" "4.7uF 10V tantalum 0603"
+		(property "Description" "4.7uF 16V X5R 0603"
 			(at 166.37 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6808,18 +6808,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "KYOCERA AVX"
-			(at 166.37 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "F981A475MMA"
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 166.37 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -6830,7 +6819,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C1953041"
+		(property "MPN" "CL10A475KO8NNNC"
 			(at 166.37 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -6841,7 +6830,7 @@
 				)
 			)
 		)
-		(property "manf#" "F981A475MMA"
+		(property "LCSC" "C19666"
 			(at 166.37 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -6852,7 +6841,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=F981A475MMA"
+		(property "manf#" "CL10A475KO8NNNC"
 			(at 166.37 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -6863,7 +6852,18 @@
 				)
 			)
 		)
-		(property "Mouser" "https://www.mouser.com/c/?q=F981A475MMA"
+		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=CL10A475KO8NNNC"
+			(at 166.37 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "https://www.mouser.com/c/?q=CL10A475KO8NNNC"
 			(at 166.37 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -8523,7 +8523,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Q_NMOS_DGS"
+		(property "Value" "BSS306N"
 			(at 57.277 31.877 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9352,7 +9352,7 @@
 				)
 			)
 		)
-		(property "Description" "4.7uF 10V tantalum 0603"
+		(property "Description" "4.7uF 16V X5R 0603"
 			(at 99.06 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9362,18 +9362,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "KYOCERA AVX"
-			(at 99.06 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "F981A475MMA"
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 99.06 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -9384,7 +9373,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C1953041"
+		(property "MPN" "CL10A475KO8NNNC"
 			(at 99.06 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -9395,7 +9384,7 @@
 				)
 			)
 		)
-		(property "manf#" "F981A475MMA"
+		(property "LCSC" "C19666"
 			(at 99.06 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -9406,7 +9395,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=F981A475MMA"
+		(property "manf#" "CL10A475KO8NNNC"
 			(at 99.06 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -9417,7 +9406,18 @@
 				)
 			)
 		)
-		(property "Mouser" "https://www.mouser.com/c/?q=F981A475MMA"
+		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=CL10A475KO8NNNC"
+			(at 99.06 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "https://www.mouser.com/c/?q=CL10A475KO8NNNC"
 			(at 99.06 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -9496,7 +9496,7 @@
 				)
 			)
 		)
-		(property "Description" "Single-pole slide DIP switch"
+		(property "Description" "1-position SPST slide DIP switch, SMD gull wing, 1.27mm pitch"
 			(at 195.58 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9506,18 +9506,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Apem"
-			(at 195.58 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "IKD0103101"
+		(property "Manufacturer" "Nidec"
 			(at 195.58 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -9528,7 +9517,7 @@
 				)
 			)
 		)
-		(property "manf#" "IKD0103101"
+		(property "MPN" "CHS-01TB"
 			(at 195.58 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -9539,7 +9528,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=IKD0103101"
+		(property "LCSC" "C2680613"
 			(at 195.58 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -9550,7 +9539,29 @@
 				)
 			)
 		)
-		(property "Mouser" "https://www.mouser.com/c/?q=IKD0103101"
+		(property "manf#" "CHS-01TB"
+			(at 195.58 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=CHS-01TB"
+			(at 195.58 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "https://www.mouser.com/c/?q=CHS-01TB"
 			(at 195.58 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -10251,7 +10262,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Q_NMOS_DGS"
+		(property "Value" "BSS306N"
 			(at 57.277 45.847 0)
 			(show_name no)
 			(do_not_autoplace no)
