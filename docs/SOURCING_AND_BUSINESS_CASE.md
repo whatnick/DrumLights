@@ -8,13 +8,27 @@ Market, competitor and third-party board figures come from web searches. They ar
 | Ref | Problem | Action |
 | --- | --- | --- |
 | C2, C3 | `F981A475MMA` tantalum was **Obsolete** at Mouser | **Done:** now `CL10A475KO8NNNC` (4.7 µF 16 V X5R 0603, LCSC C19666, JLC basic, 3.85 M in stock; Mouser stock was 0 on 2026-11-08, with the 6.3 V `CL10A475KQ8NNNC` in stock as a fallback only for sub-5 V use). The footprint is unchanged. Check DC-bias derating on the 5 V and BATT rails. |
-| D2 | `MBR120VLSFT3G` is stocked (Mouser 738, $0.40 at 100) but not on JLC | Keep it. Alternative: `SS14-E3/61T` (40 V 1 A, Mouser 249k in stock). It is SMA, so it needs a new footprint. |
+| D2 | `MBR120VLSFT3G` was $0.40 at 100 and not on JLC | **Done:** now `B5819W SL` (SOD-123, 40 V 1 A, LCSC C8598, JLC basic, $0.026). Same footprint. Vf is about 0.6 V at 1 A against about 0.4 V, so check the dropout on the battery path. Keep MBR120 as the low-Vf option. |
 | D3 | `LRTB GFTM` is not found at Mouser or DigiKey | Pick a stocked RGB PLCC-6 and match its pinout to the D3 footprint. JLC lists only a PLCC-4 CREE part. **Open item.** |
 | U1 | `TLV2771CDBVR` is stocked at Mouser (6073 in stock; $2.34 at 1, $1.54 at 100) | OK. The I-grade `TLV2771IDBVR` is the JLC route (LCSC C130906). |
 | RV1 | `3339P-1-103LF` costs $3.70 at 100 | The most expensive passive on the board. Consider a ~$0.30 SMD trimmer. |
 | SW1 | `IKD0103101` had 0 stock at Mouser and a 1300-piece minimum at DigiKey | **Done:** now Nidec/Copal `CHS-01TB` (SMD gull-wing slide switch, Mouser 9346 in stock, $0.78 at 100; LCSC C2680613). It is the same Copal CHS family as the existing footprint, but check the pad span against the datasheet before ordering boards. |
 
-## 2. Shield BOM cost (Nano shield only, no MCU board)
+### Cost-down alternatives (checked 2026-11-08, not yet applied)
+
+These need a footprint change or a circuit check, so they are revision candidates rather than drop-ins.
+
+| Ref | Current (qty 100) | Alternative | Saving | Caveat |
+| --- | --- | --- | --- | --- |
+| RV1 | Bourns `3339P-1-103LF`, $3.70 (Mouser) | Bourns `TC33X-2-103E` SMD, LCSC C719176, $0.12; or `JER33X-1-14`, C48997896, $0.10 | ~$3.55 | New footprint and re-route. Single-turn, so fine adjustment is coarser. |
+| RV1 (through-hole) | same | Bourns `3362P-1-103TLF`, $1.96 (Mouser, 2910 in stock) | ~$1.75 | Different pin layout, so a new footprint. |
+| D3 | `LRTB GFTM`, not listed at Mouser or DigiKey | `S6-3528RGBTA` (Tuozhan, LCSC C2843672, $0.06, 6-pin 3528) | n/a, fixes availability | Pad pitch is 1.0 mm against 1.1 mm on the current footprint, and the pin functions are not published in the LCSC symbol. Check the datasheet pin table first. |
+| U1 | `TLV2771CDBVR`, $1.54 (Mouser); $3.04 on JLC | Any pin-compatible SOT-23-5 rail-to-rail op amp, for example `TLV9001` or `MCP6001` class | ~$1.2 | Gain-bandwidth falls from 5 MHz to about 1 MHz. Check the piezo front end on the bench first. |
+| LEDS1 | Molex Nano-Fit `105314-1204`, $1.30 | JST XH or screw terminal | ~$0.8 | Changes the mating connector on every drum. |
+
+At qty 100 the applied D2 change saves about $0.37 per board, and RV1 plus U1 would save about $4.75 more if the caveats hold.
+
+
 
 | Qty | Parts as designed | + PCB (est.) | + assembly (est.) | Optimised BOM (est.)* |
 | --- | --- | --- | --- | --- |

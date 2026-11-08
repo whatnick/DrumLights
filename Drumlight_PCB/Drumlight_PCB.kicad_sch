@@ -9154,7 +9154,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "onsemi"
+		(property "Manufacturer" "Jiangsu Changjing Electronics"
 			(at 184.15 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -9165,7 +9165,7 @@
 				)
 			)
 		)
-		(property "MPN" "MBR120VLSFT3G"
+		(property "MPN" "B5819W SL"
 			(at 184.15 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -9176,7 +9176,7 @@
 				)
 			)
 		)
-		(property "manf#" "MBR120VLSFT3G"
+		(property "LCSC" "C8598"
 			(at 184.15 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -9187,7 +9187,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=MBR120VLSFT3G"
+		(property "manf#" "B5819W SL"
 			(at 184.15 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -9198,7 +9198,18 @@
 				)
 			)
 		)
-		(property "Mouser" "https://www.mouser.com/c/?q=MBR120VLSFT3G"
+		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=B5819W%20SL"
+			(at 184.15 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "https://www.mouser.com/c/?q=B5819W%20SL"
 			(at 184.15 100.33 0)
 			(hide yes)
 			(show_name no)

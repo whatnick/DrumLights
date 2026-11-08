@@ -3,7 +3,7 @@
 "C1","10pF","Drumlight_PCB:C_0603","Samsung Electro-Mechanics","CL10C100JB8NNNC","C1634","https://www.digikey.com/en/products/result?keywords=CL10C100JB8NNNC","https://www.mouser.com/c/?q=CL10C100JB8NNNC"
 "C2,C3","4.7uF","Drumlight_PCB:C_0603","Samsung Electro-Mechanics","CL10A475KO8NNNC","C19666","https://www.digikey.com/en/products/result?keywords=CL10A475KO8NNNC","https://www.mouser.com/c/?q=CL10A475KO8NNNC"
 "D1","LED","Drumlight_PCB:LED_0603","Lite-On","LTST-C191KGKT","C125098","https://www.digikey.com/en/products/result?keywords=LTST-C191KGKT","https://www.mouser.com/c/?q=LTST-C191KGKT"
-"D2","D_Schottky","Drumlight_PCB:D_SOD-123","onsemi","MBR120VLSFT3G","","https://www.digikey.com/en/products/result?keywords=MBR120VLSFT3G","https://www.mouser.com/c/?q=MBR120VLSFT3G"
+"D2","D_Schottky","Drumlight_PCB:D_SOD-123","Jiangsu Changjing Electronics","B5819W SL","C8598","https://www.digikey.com/en/products/result?keywords=B5819W%20SL","https://www.mouser.com/c/?q=B5819W%20SL"
 "D3","LED_RGB","Drumlight_PCB:LED_RGB_PLCC-6","ams OSRAM","LRTB GFTM","","https://www.digikey.com/en/products/result?keywords=LRTB%20GFTM","https://www.mouser.com/c/?q=LRTB%20GFTM"
 "LEDS1","CONN_01X04","Drumlight_PCB:Molex_NanoFit_1x04x2.50mm_Angled","Molex","105314-1204","C122399","https://www.digikey.com/en/products/result?keywords=105314-1204","https://www.mouser.com/c/?q=105314-1204"
 "P1,P2","Analog,Digital","Drumlight_PCB:Socket_Strip_Straight_1x15","","","","",""
