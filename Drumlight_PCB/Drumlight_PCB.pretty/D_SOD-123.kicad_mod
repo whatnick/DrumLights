@@ -244,7 +244,7 @@
 		(uuid "e5626cee-52e9-40f9-8e56-4f06f1bed98b")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/Drumlights.3dshapes/SOD-123.step"
+	(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
 		(offset
 			(xyz 0 0 0)
 		)
