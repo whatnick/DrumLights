@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Drumlight_PCB-cache")(type "KiCad")(uri "${KIPRJMOD}/Drumlight_PCB-cache.kicad_sym")(options "")(descr "Symbols used by the DrumLights schematic"))
+)

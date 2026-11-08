@@ -28,6 +28,12 @@ This design was featured and used in the **Adelaide Fringe Festival parade**.
 
 ![Schematic](Drumlight_PCB/drumlights_schema.png)
 
+### Hardware status
+
+- ERC and DRC (with schematic parity) pass with 0 violations in KiCad 10. Project rules in `Drumlight_PCB.kicad_pro` relax checks that are inherent to a Nano shield: the P3–P6 mounting pins sit on the board edge, and the Nano sockets overlap courtyards and silkscreen.
+- Footprints live in the project library `Drumlight_PCB.pretty`.
+- `Drumlight_PCB/Drumlight_PCB_bom.csv` is the sourced BOM (manufacturer, MPN, LCSC and DigiKey/Mouser search links), exported from the schematic fields. Check live stock before ordering: D2, D3, U1, RV1 and SW1 have no LCSC part, and C2/C3 have low JLC stock.
+
 ## Getting started
 
 1. Install [`arduino-cli`](https://arduino.github.io/arduino-cli/) (or the Arduino IDE) and the `RunningAverage` library.

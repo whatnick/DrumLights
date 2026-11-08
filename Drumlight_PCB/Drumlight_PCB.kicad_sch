@@ -4406,7 +4406,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 35.56) (xy 177.8 67.31)
+			(xy 177.8 39.37) (xy 177.8 67.31)
 		)
 		(stroke
 			(width 0)
@@ -5852,7 +5852,7 @@
 			(uuid "c557e1c6-5a15-4346-b501-5d4c59ba4e61")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "#PWR04")
 					(unit 1)
@@ -5891,7 +5891,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_0603"
+		(property "Footprint" "Drumlight_PCB:R_0603"
 			(at 8.382 -20.32 90)
 			(hide yes)
 			(show_name no)
@@ -5913,7 +5913,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "100k 1% 0603 resistor"
 			(at 167.64 67.31 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5923,14 +5923,69 @@
 				)
 			)
 		)
-		(property "manf#" "CRCW0603100KFKEA"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 167.64 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1003T5E"
+			(at 167.64 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 167.64 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "manf#" "0603WAF1003T5E"
+			(at 167.64 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=0603WAF1003T5E"
+			(at 167.64 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "https://www.mouser.com/c/?q=0603WAF1003T5E"
+			(at 167.64 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -5941,9 +5996,83 @@
 			(uuid "01601c1f-c9cc-4829-8a80-07f8b6480bb8")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Drumlight_PCB-cache:PWR_FLAG")
+		(at 167.64 31.75 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0e0be9ed-7d14-4c0a-a241-dc1d3ab34ac2")
+		(property "Reference" "#FLG018"
+			(at 167.64 34.163 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 167.64 36.322 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 167.64 31.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 31.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 167.64 31.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "28416bd0-5861-488a-84bd-9d50af426699")
+		)
+		(instances
+			(project "Drumlight_PCB"
+				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
+					(reference "#FLG018")
 					(unit 1)
 				)
 			)
@@ -5955,7 +6084,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -5981,7 +6110,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Socket_Arduino_Nano:1pin_Nano"
+		(property "Footprint" "Drumlight_PCB:1pin_Nano"
 			(at 279.4 16.51 0)
 			(hide yes)
 			(show_name no)
@@ -6016,7 +6145,7 @@
 			(uuid "ad9d709b-46f2-4f8e-b044-06a07b79f42a")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "P5")
 					(unit 1)
@@ -6057,7 +6186,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "NMOS_SOT23:SOT-23"
+		(property "Footprint" "Drumlight_PCB:SOT-23"
 			(at -53.34 12.7 0)
 			(hide yes)
 			(show_name no)
@@ -6079,8 +6208,41 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "30V 2.3A N-channel MOSFET SOT-23"
 			(at 52.07 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Infineon"
+			(at 52.07 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "BSS306N H6327"
+			(at 52.07 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C72769"
+			(at 52.07 62.23 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6096,7 +6258,29 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=BSS306N%20H6327"
+			(at 52.07 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "https://www.mouser.com/c/?q=BSS306N%20H6327"
+			(at 52.07 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -6110,7 +6294,7 @@
 			(uuid "0519c11f-5b52-4e18-9cea-a6035177ef1d")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "Q3")
 					(unit 1)
@@ -6184,7 +6368,7 @@
 			(uuid "31766a52-2d38-4ae4-8c12-71e6dd1edf85")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "#PWR09")
 					(unit 1)
@@ -6258,7 +6442,7 @@
 			(uuid "0a2ec6c5-2553-451d-9c20-4928c817e8c4")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "#PWR03")
 					(unit 1)
@@ -6299,7 +6483,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Potentiometers:Potentiometer_Bourns_3339P_Angular_ScrewUp"
+		(property "Footprint" "Drumlight_PCB:Potentiometer_Bourns_3339P_Angular_ScrewUp"
 			(at 72.39 5.08 0)
 			(hide yes)
 			(show_name no)
@@ -6321,7 +6505,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "10k 4-turn cermet trimmer"
 			(at 234.95 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6331,14 +6515,58 @@
 				)
 			)
 		)
-		(property "manf#" "3362P-1-253LF"
+		(property "Manufacturer" "Bourns"
 			(at 234.95 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "3339P-1-103LF"
+			(at 234.95 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "manf#" "3339P-1-103LF"
+			(at 234.95 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=3339P-1-103LF"
+			(at 234.95 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "https://www.mouser.com/c/?q=3339P-1-103LF"
+			(at 234.95 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -6352,7 +6580,7 @@
 			(uuid "56508fd4-ec90-4fda-9228-f72fd86ae786")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "RV1")
 					(unit 1)
@@ -6366,7 +6594,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -6392,7 +6620,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Socket_Arduino_Nano:1pin_Nano"
+		(property "Footprint" "Drumlight_PCB:1pin_Nano"
 			(at 281.94 16.51 0)
 			(hide yes)
 			(show_name no)
@@ -6427,7 +6655,7 @@
 			(uuid "f44d8a7a-a8a5-451d-b55d-ebce777fbaff")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "P6")
 					(unit 1)
@@ -6441,7 +6669,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -6466,7 +6694,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connect:GS3"
+		(property "Footprint" "Drumlight_PCB:GS3"
 			(at -0.3048 1.9304 90)
 			(hide yes)
 			(show_name no)
@@ -6508,7 +6736,7 @@
 			(uuid "190a8923-c836-4dde-babe-cbec741b25ba")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "J4")
 					(unit 1)
@@ -6549,7 +6777,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0603"
+		(property "Footprint" "Drumlight_PCB:C_0603"
 			(at 167.3352 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -6570,8 +6798,41 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "4.7uF 10V tantalum 0603"
 			(at 166.37 116.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KYOCERA AVX"
+			(at 166.37 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "F981A475MMA"
+			(at 166.37 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1953041"
+			(at 166.37 116.84 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6587,7 +6848,29 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=F981A475MMA"
+			(at 166.37 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "https://www.mouser.com/c/?q=F981A475MMA"
+			(at 166.37 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -6598,7 +6881,7 @@
 			(uuid "ffeb6c5e-9fb3-4e3c-891e-7b9af947a26e")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "C3")
 					(unit 1)
@@ -6672,7 +6955,7 @@
 			(uuid "6df72b77-d7d7-4342-afb4-0b7e960d44c3")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "#PWR01")
 					(unit 1)
@@ -6746,7 +7029,7 @@
 			(uuid "ea615d0e-5759-4405-9495-105fd3646a99")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "#PWR020")
 					(unit 1)
@@ -6820,7 +7103,7 @@
 			(uuid "c60a01aa-e92a-4f93-838b-7866edfe7278")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "#PWR013")
 					(unit 1)
@@ -6894,7 +7177,7 @@
 			(uuid "6ad12674-67bd-4f08-bfcd-5a0d3f670147")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "#PWR019")
 					(unit 1)
@@ -6935,7 +7218,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_0603"
+		(property "Footprint" "Drumlight_PCB:R_0603"
 			(at -9.398 -49.53 90)
 			(hide yes)
 			(show_name no)
@@ -6957,7 +7240,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "10k 1% 0603 resistor"
 			(at 149.86 38.1 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6967,14 +7250,69 @@
 				)
 			)
 		)
-		(property "manf#" "WR06X1002FTL"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 149.86 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1002T5E"
+			(at 149.86 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 149.86 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "manf#" "0603WAF1002T5E"
+			(at 149.86 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=0603WAF1002T5E"
+			(at 149.86 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "https://www.mouser.com/c/?q=0603WAF1002T5E"
+			(at 149.86 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -6985,7 +7323,7 @@
 			(uuid "d63e16d0-d0d2-4050-9d3b-37d927620792")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "R2")
 					(unit 1)
@@ -7026,7 +7364,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TO_SOT_Packages_SMD:SOT-23-5"
+		(property "Footprint" "Drumlight_PCB:SOT-23-5"
 			(at 25.4 -36.83 0)
 			(hide yes)
 			(show_name no)
@@ -7048,8 +7386,30 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "2.7V rail-to-rail op amp SOT-23-5"
 			(at 170.18 39.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 170.18 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "TLV2771CDBVR"
+			(at 170.18 39.37 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7065,7 +7425,29 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=TLV2771CDBVR"
+			(at 170.18 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "https://www.mouser.com/c/?q=TLV2771CDBVR"
+			(at 170.18 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -7085,7 +7467,7 @@
 			(uuid "617c7c20-926b-4059-bde2-f9c6b8be3b8b")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "U1")
 					(unit 1)
@@ -7124,7 +7506,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0603"
+		(property "Footprint" "Drumlight_PCB:C_0603"
 			(at 8.5852 -40.64 0)
 			(hide yes)
 			(show_name no)
@@ -7146,7 +7528,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "10pF 50V C0G 0603"
 			(at 167.64 59.69 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7156,14 +7538,69 @@
 				)
 			)
 		)
-		(property "manf#" "CC0603JRNPO9BN100"
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 167.64 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL10C100JB8NNNC"
+			(at 167.64 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1634"
+			(at 167.64 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "manf#" "CL10C100JB8NNNC"
+			(at 167.64 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=CL10C100JB8NNNC"
+			(at 167.64 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "https://www.mouser.com/c/?q=CL10C100JB8NNNC"
+			(at 167.64 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -7174,7 +7611,7 @@
 			(uuid "4213ee9f-b808-409e-8293-92ac9dfd74fc")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "C1")
 					(unit 1)
@@ -7213,7 +7650,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_0603"
+		(property "Footprint" "Drumlight_PCB:R_0603"
 			(at 117.602 119.38 90)
 			(hide yes)
 			(show_name no)
@@ -7234,8 +7671,74 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "470R 1% 0603 resistor"
 			(at 119.38 119.38 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 119.38 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF4700T5E"
+			(at 119.38 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23179"
+			(at 119.38 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "manf#" "0603WAF4700T5E"
+			(at 119.38 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=0603WAF4700T5E"
+			(at 119.38 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "https://www.mouser.com/c/?q=0603WAF4700T5E"
+			(at 119.38 119.38 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7251,7 +7754,7 @@
 			(uuid "e14d9d05-a357-4b44-86ef-1ae7002ea437")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "R5")
 					(unit 1)
@@ -7292,7 +7795,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LEDs:LED_RGB_PLCC-6"
+		(property "Footprint" "Drumlight_PCB:LED_RGB_PLCC-6"
 			(at 2.54 0 0)
 			(hide yes)
 			(show_name no)
@@ -7314,8 +7817,30 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED PLCC-6"
 			(at 26.67 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "ams OSRAM"
+			(at 26.67 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "LRTB GFTM"
+			(at 26.67 44.45 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7331,7 +7856,29 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=LRTB%20GFTM"
+			(at 26.67 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "https://www.mouser.com/c/?q=LRTB%20GFTM"
+			(at 26.67 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -7354,7 +7901,7 @@
 			(uuid "506aae82-4076-4836-b1b5-c96663b79e5d")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "D3")
 					(unit 1)
@@ -7393,7 +7940,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TO_SOT_Packages_SMD:SOT-23-5"
+		(property "Footprint" "Drumlight_PCB:SOT-23-5"
 			(at 135.89 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -7414,8 +7961,41 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "LiPo charge controller SOT-23-5"
 			(at 135.89 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Microchip"
+			(at 135.89 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "MCP73831T-3ACI/OT"
+			(at 135.89 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C625598"
+			(at 135.89 104.14 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7431,7 +8011,29 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=MCP73831T-3ACI/OT"
+			(at 135.89 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "https://www.mouser.com/c/?q=MCP73831T-3ACI/OT"
+			(at 135.89 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -7451,9 +8053,83 @@
 			(uuid "ce072185-a3a6-4599-8e1c-12e911595b01")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Drumlight_PCB-cache:PWR_FLAG")
+		(at 167.64 46.99 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6de53800-cf09-46e6-bbc2-6946941e0b03")
+		(property "Reference" "#FLG019"
+			(at 167.64 49.403 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 167.64 51.562 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 167.64 46.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 46.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 167.64 46.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2028138b-c3ce-434f-9e18-512fbdb9b8f5")
+		)
+		(instances
+			(project "Drumlight_PCB"
+				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
+					(reference "#FLG019")
 					(unit 1)
 				)
 			)
@@ -7490,7 +8166,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connectors_JST:JST_PH_S2B-PH-K_02x2.00mm_Angled"
+		(property "Footprint" "Drumlight_PCB:JST_PH_S2B-PH-K_02x2.00mm_Angled"
 			(at 104.14 19.05 0)
 			(hide yes)
 			(show_name no)
@@ -7512,8 +8188,41 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "JST PH 2-pin right-angle header"
 			(at 187.96 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "JST"
+			(at 187.96 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "S2B-PH-K-S(LF)(SN)"
+			(at 187.96 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C173752"
+			(at 187.96 107.95 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7529,7 +8238,29 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=S2B-PH-K-S%28LF%29%28SN%29"
+			(at 187.96 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "https://www.mouser.com/c/?q=S2B-PH-K-S%28LF%29%28SN%29"
+			(at 187.96 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -7540,7 +8271,7 @@
 			(uuid "00ba0be8-ca3a-41ba-9015-0e67325dfc1a")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "BAT1")
 					(unit 1)
@@ -7614,7 +8345,7 @@
 			(uuid "86a0316b-cce8-466e-bdb2-7e8995d9fef9")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "#PWR010")
 					(unit 1)
@@ -7688,7 +8419,7 @@
 			(uuid "0c934446-6132-4dd8-b9a2-ff40310d8295")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "#PWR021")
 					(unit 1)
@@ -7762,7 +8493,7 @@
 			(uuid "6a1152d9-9da3-43ca-97d1-62b23835b166")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "#PWR016")
 					(unit 1)
@@ -7803,7 +8534,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "NMOS_SOT23:SOT-23"
+		(property "Footprint" "Drumlight_PCB:SOT-23"
 			(at -53.34 -16.51 0)
 			(hide yes)
 			(show_name no)
@@ -7825,8 +8556,41 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "30V 2.3A N-channel MOSFET SOT-23"
 			(at 52.07 33.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Infineon"
+			(at 52.07 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "BSS306N H6327"
+			(at 52.07 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C72769"
+			(at 52.07 33.02 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7842,7 +8606,29 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=BSS306N%20H6327"
+			(at 52.07 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "https://www.mouser.com/c/?q=BSS306N%20H6327"
+			(at 52.07 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -7856,7 +8642,7 @@
 			(uuid "027a6df1-d4e0-4760-abf3-f30b02554763")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "Q1")
 					(unit 1)
@@ -7870,7 +8656,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -7896,7 +8682,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Socket_Arduino_Nano:1pin_Nano"
+		(property "Footprint" "Drumlight_PCB:1pin_Nano"
 			(at 276.86 16.51 0)
 			(hide yes)
 			(show_name no)
@@ -7931,9 +8717,83 @@
 			(uuid "b3c6e800-faee-45a1-819a-80cc4c0ac6bc")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "P4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Drumlight_PCB-cache:PWR_FLAG")
+		(at 265.43 24.13 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7ddf3f13-26ea-4e90-9892-feb5ca626de7")
+		(property "Reference" "#FLG020"
+			(at 265.43 26.543 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 265.43 28.702 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 265.43 24.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 265.43 24.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 265.43 24.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "07dc9041-f296-4c09-9a6a-e2f141a1dadf")
+		)
+		(instances
+			(project "Drumlight_PCB"
+				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
+					(reference "#FLG020")
 					(unit 1)
 				)
 			)
@@ -8005,7 +8865,7 @@
 			(uuid "3a80d615-27c4-4a5c-aa70-5805b7b5919e")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "#PWR022")
 					(unit 1)
@@ -8044,7 +8904,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_0603"
+		(property "Footprint" "Drumlight_PCB:R_0603"
 			(at -137.668 -54.61 90)
 			(hide yes)
 			(show_name no)
@@ -8066,7 +8926,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "100R 1% 0603 resistor"
 			(at 21.59 33.02 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8076,14 +8936,69 @@
 				)
 			)
 		)
-		(property "manf#" "CRCW0603470RFKEA"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 21.59 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1000T5E"
+			(at 21.59 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C22775"
+			(at 21.59 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "manf#" "0603WAF1000T5E"
+			(at 21.59 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=0603WAF1000T5E"
+			(at 21.59 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "https://www.mouser.com/c/?q=0603WAF1000T5E"
+			(at 21.59 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -8094,7 +9009,7 @@
 			(uuid "97fa0f2e-1969-481f-a341-066c29a284fc")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "R8")
 					(unit 1)
@@ -8168,7 +9083,7 @@
 			(uuid "31666c00-30fb-4ba3-b01c-14399bad2368")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "#PWR06")
 					(unit 1)
@@ -8207,7 +9122,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diodes_SMD:D_SOD-123"
+		(property "Footprint" "Drumlight_PCB:D_SOD-123"
 			(at 0 -2.54 0)
 			(hide yes)
 			(show_name no)
@@ -8229,7 +9144,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "20V 1A Schottky diode SOD-123"
 			(at 184.15 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8239,14 +9154,25 @@
 				)
 			)
 		)
-		(property "Mfg_Part_No" "MBR120VLSFT3G"
+		(property "Manufacturer" "onsemi"
 			(at 184.15 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "MBR120VLSFT3G"
+			(at 184.15 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -8257,7 +9183,29 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=MBR120VLSFT3G"
+			(at 184.15 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "https://www.mouser.com/c/?q=MBR120VLSFT3G"
+			(at 184.15 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -8268,7 +9216,7 @@
 			(uuid "aaf28982-d8e6-44e5-9c25-cb49e29788ff")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "D2")
 					(unit 1)
@@ -8278,7 +9226,7 @@
 	)
 	(symbol
 		(lib_id "Drumlight_PCB-cache:PWR_FLAG")
-		(at 173.99 105.41 0)
+		(at 147.32 105.41 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8286,9 +9234,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "92daefb5-6baa-42ce-8d16-ef035f0b2573")
-		(property "Reference" "#FLG018"
-			(at 173.99 107.823 0)
+		(uuid "915de349-d466-4988-8ed3-11bb73251423")
+		(property "Reference" "#FLG017"
+			(at 147.32 107.823 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8299,7 +9247,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 173.99 109.982 0)
+			(at 147.32 109.982 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8309,7 +9257,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 173.99 105.41 0)
+			(at 147.32 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8319,7 +9267,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 173.99 105.41 0)
+			(at 147.32 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8329,7 +9277,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 173.99 105.41 0)
+			(at 147.32 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8339,12 +9287,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "e8cc9fea-1be6-44c4-9198-697120f76299")
+			(uuid "274e8907-03e1-4f3c-ad00-5553dde64119")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
-					(reference "#FLG018")
+					(reference "#FLG017")
 					(unit 1)
 				)
 			)
@@ -8383,7 +9331,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0603"
+		(property "Footprint" "Drumlight_PCB:C_0603"
 			(at 100.0252 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -8404,8 +9352,41 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "4.7uF 10V tantalum 0603"
 			(at 99.06 116.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KYOCERA AVX"
+			(at 99.06 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "F981A475MMA"
+			(at 99.06 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1953041"
+			(at 99.06 116.84 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8421,18 +9402,29 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Mfg_Part_No" "F981A475MMA"
+		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=F981A475MMA"
 			(at 99.06 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "https://www.mouser.com/c/?q=F981A475MMA"
+			(at 99.06 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -8443,83 +9435,9 @@
 			(uuid "eb983590-39bb-4973-970d-38494744ce55")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Drumlight_PCB-cache:PWR_FLAG")
-		(at 96.52 105.41 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "9a0f7354-1406-42a5-8359-41658b327632")
-		(property "Reference" "#FLG017"
-			(at 96.52 107.823 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 96.52 109.982 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 96.52 105.41 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 96.52 105.41 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 96.52 105.41 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "39064bfb-5467-4edb-831a-420511de0dbe")
-		)
-		(instances
-			(project ""
-				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
-					(reference "#FLG017")
 					(unit 1)
 				)
 			)
@@ -8556,7 +9474,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Buttons_Switches_SMD:SW_DIP_x1_W7.62mm_Slide_Copal_CHS-B"
+		(property "Footprint" "Drumlight_PCB:SW_DIP_x1_W7.62mm_Slide_Copal_CHS-B"
 			(at 15.24 -29.21 0)
 			(hide yes)
 			(show_name no)
@@ -8578,8 +9496,30 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single-pole slide DIP switch"
 			(at 195.58 100.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Apem"
+			(at 195.58 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "IKD0103101"
+			(at 195.58 100.33 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8595,7 +9535,29 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=IKD0103101"
+			(at 195.58 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "https://www.mouser.com/c/?q=IKD0103101"
+			(at 195.58 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -8606,7 +9568,7 @@
 			(uuid "6a7f9e2e-2125-41b1-9867-d77f7120ce68")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "SW1")
 					(unit 1)
@@ -8680,7 +9642,7 @@
 			(uuid "a0740e1c-5929-4708-b16a-e74f9671aa7a")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "#PWR014")
 					(unit 1)
@@ -8709,7 +9671,7 @@
 				)
 			)
 		)
-		(property "Value" "5K"
+		(property "Value" "5.1K"
 			(at 242.1636 99.06 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8719,7 +9681,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_0603"
+		(property "Footprint" "Drumlight_PCB:R_0603"
 			(at 85.852 11.43 90)
 			(hide yes)
 			(show_name no)
@@ -8741,7 +9703,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "5.1k 1% 0603 resistor"
 			(at 245.11 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8751,14 +9713,69 @@
 				)
 			)
 		)
-		(property "manf#" "ERJ3RBD5101V"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 245.11 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF5101T5E"
+			(at 245.11 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23186"
+			(at 245.11 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "manf#" "0603WAF5101T5E"
+			(at 245.11 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=0603WAF5101T5E"
+			(at 245.11 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "https://www.mouser.com/c/?q=0603WAF5101T5E"
+			(at 245.11 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -8769,7 +9786,7 @@
 			(uuid "551d94a4-edb1-4ce6-9ce9-26121de75a33")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "R7")
 					(unit 1)
@@ -8808,7 +9825,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_0603"
+		(property "Footprint" "Drumlight_PCB:R_0603"
 			(at -127.508 -54.61 90)
 			(hide yes)
 			(show_name no)
@@ -8830,7 +9847,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "150R 1% 0603 resistor"
 			(at 31.75 33.02 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8840,14 +9857,69 @@
 				)
 			)
 		)
-		(property "manf#" "Value"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 31.75 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1500T5E"
+			(at 31.75 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C22808"
+			(at 31.75 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "manf#" "0603WAF1500T5E"
+			(at 31.75 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=0603WAF1500T5E"
+			(at 31.75 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "https://www.mouser.com/c/?q=0603WAF1500T5E"
+			(at 31.75 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -8858,7 +9930,7 @@
 			(uuid "3dd1697c-3094-4436-b048-2bd1bbcff465")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "R10")
 					(unit 1)
@@ -8932,7 +10004,7 @@
 			(uuid "30b87a1e-40d4-4ace-9ef7-48eef68303a9")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "#PWR012")
 					(unit 1)
@@ -9006,7 +10078,7 @@
 			(uuid "b4e02743-cf3b-4934-bc75-0c801853f9db")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "#PWR05")
 					(unit 1)
@@ -9045,7 +10117,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_0603"
+		(property "Footprint" "Drumlight_PCB:R_0603"
 			(at 154.432 115.57 90)
 			(hide yes)
 			(show_name no)
@@ -9066,7 +10138,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "10k 1% 0603 resistor"
 			(at 156.21 115.57 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9076,14 +10148,69 @@
 				)
 			)
 		)
-		(property "manf#" "WR06X1002FTL"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 156.21 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1002T5E"
+			(at 156.21 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 156.21 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "manf#" "0603WAF1002T5E"
+			(at 156.21 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=0603WAF1002T5E"
+			(at 156.21 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "https://www.mouser.com/c/?q=0603WAF1002T5E"
+			(at 156.21 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -9094,7 +10221,7 @@
 			(uuid "99c0a324-4540-4b1f-8f89-1c78d616c862")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "R6")
 					(unit 1)
@@ -9135,7 +10262,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "NMOS_SOT23:SOT-23"
+		(property "Footprint" "Drumlight_PCB:SOT-23"
 			(at -53.34 -2.54 0)
 			(hide yes)
 			(show_name no)
@@ -9157,8 +10284,41 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "30V 2.3A N-channel MOSFET SOT-23"
 			(at 52.07 46.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Infineon"
+			(at 52.07 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "BSS306N H6327"
+			(at 52.07 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C72769"
+			(at 52.07 46.99 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9174,7 +10334,29 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=BSS306N%20H6327"
+			(at 52.07 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "https://www.mouser.com/c/?q=BSS306N%20H6327"
+			(at 52.07 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -9188,7 +10370,7 @@
 			(uuid "ecab4c16-85c9-4ed2-8458-0a3bc2225a0c")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "Q2")
 					(unit 1)
@@ -9227,7 +10409,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_0603"
+		(property "Footprint" "Drumlight_PCB:R_0603"
 			(at -11.938 -35.56 90)
 			(hide yes)
 			(show_name no)
@@ -9249,7 +10431,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "100R 1% 0603 resistor"
 			(at 147.32 52.07 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9259,14 +10441,69 @@
 				)
 			)
 		)
-		(property "manf#" "CR0603-FX-1000ELF"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 147.32 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1000T5E"
+			(at 147.32 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C22775"
+			(at 147.32 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "manf#" "0603WAF1000T5E"
+			(at 147.32 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=0603WAF1000T5E"
+			(at 147.32 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "https://www.mouser.com/c/?q=0603WAF1000T5E"
+			(at 147.32 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -9277,7 +10514,7 @@
 			(uuid "a3f9ca97-b886-45df-afe3-5fb801b801a8")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "R3")
 					(unit 1)
@@ -9318,7 +10555,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connectors_Molex:Molex_NanoFit_1x04x2.50mm_Angled"
+		(property "Footprint" "Drumlight_PCB:Molex_NanoFit_1x04x2.50mm_Angled"
 			(at -69.85 -15.24 0)
 			(hide yes)
 			(show_name no)
@@ -9340,8 +10577,41 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Nano-Fit 2x2 right-angle header"
 			(at 87.63 45.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Molex"
+			(at 87.63 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "105314-1204"
+			(at 87.63 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C122399"
+			(at 87.63 45.72 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9357,7 +10627,29 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=105314-1204"
+			(at 87.63 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "https://www.mouser.com/c/?q=105314-1204"
+			(at 87.63 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -9374,7 +10666,7 @@
 			(uuid "d52bf5a1-5363-4440-9387-8809ca575530")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "LEDS1")
 					(unit 1)
@@ -9388,7 +10680,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -9414,7 +10706,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Socket_Arduino_Nano:1pin_Nano"
+		(property "Footprint" "Drumlight_PCB:1pin_Nano"
 			(at 274.32 16.51 0)
 			(hide yes)
 			(show_name no)
@@ -9449,7 +10741,7 @@
 			(uuid "485e388c-354b-4c11-8deb-93184e4c79fa")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "P3")
 					(unit 1)
@@ -9523,7 +10815,7 @@
 			(uuid "2f16a383-f6a2-4375-9c15-e9e53b76f8f9")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "#PWR015")
 					(unit 1)
@@ -9562,7 +10854,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Socket_Strips:Socket_Strip_Straight_1x15"
+		(property "Footprint" "Drumlight_PCB:Socket_Strip_Straight_1x15"
 			(at 242.57 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -9639,7 +10931,7 @@
 			(uuid "e9bff761-19db-42ad-86e2-d55f20f2e8d1")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "P1")
 					(unit 1)
@@ -9713,7 +11005,7 @@
 			(uuid "405e6597-601c-4e8c-bd79-469944cd2406")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "#PWR08")
 					(unit 1)
@@ -9787,7 +11079,7 @@
 			(uuid "b3462e02-6268-44a8-8710-50f64b97424e")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "#PWR011")
 					(unit 1)
@@ -9826,7 +11118,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LEDs:LED_0603"
+		(property "Footprint" "Drumlight_PCB:LED_0603"
 			(at 111.76 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -9847,7 +11139,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Yellow-green 0603 status LED"
 			(at 111.76 114.3 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9857,14 +11149,69 @@
 				)
 			)
 		)
-		(property "manf#" "TLMS1000-GS08"
+		(property "Manufacturer" "Lite-On"
 			(at 111.76 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "LTST-C191KGKT"
+			(at 111.76 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C125098"
+			(at 111.76 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "manf#" "LTST-C191KGKT"
+			(at 111.76 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=LTST-C191KGKT"
+			(at 111.76 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "https://www.mouser.com/c/?q=LTST-C191KGKT"
+			(at 111.76 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -9875,7 +11222,7 @@
 			(uuid "5fbc8596-21f9-4787-93d0-c8cf07f2b98f")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "D1")
 					(unit 1)
@@ -9949,7 +11296,7 @@
 			(uuid "2a13197d-fd60-4a64-b9d4-59b8fc630c43")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "#PWR07")
 					(unit 1)
@@ -9989,7 +11336,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connectors_JST:JST_PH_S2B-PH-K_02x2.00mm_Angled"
+		(property "Footprint" "Drumlight_PCB:JST_PH_S2B-PH-K_02x2.00mm_Angled"
 			(at 41.91 -35.56 0)
 			(hide yes)
 			(show_name no)
@@ -10011,8 +11358,41 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "JST PH 2-pin right-angle header"
 			(at 125.73 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "JST"
+			(at 125.73 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "S2B-PH-K-S(LF)(SN)"
+			(at 125.73 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C173752"
+			(at 125.73 53.34 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10028,7 +11408,29 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=S2B-PH-K-S%28LF%29%28SN%29"
+			(at 125.73 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "https://www.mouser.com/c/?q=S2B-PH-K-S%28LF%29%28SN%29"
+			(at 125.73 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -10039,7 +11441,7 @@
 			(uuid "5a75d304-fbb7-47e9-bd49-dee7405d7860")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "PZO1")
 					(unit 1)
@@ -10113,7 +11515,7 @@
 			(uuid "1d62ebee-8051-40ac-a36a-97093f463654")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "#PWR02")
 					(unit 1)
@@ -10152,7 +11554,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_0603"
+		(property "Footprint" "Drumlight_PCB:R_0603"
 			(at -132.588 -54.61 90)
 			(hide yes)
 			(show_name no)
@@ -10174,7 +11576,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "100R 1% 0603 resistor"
 			(at 26.67 33.02 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10184,14 +11586,69 @@
 				)
 			)
 		)
-		(property "manf#" "Value"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 26.67 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1000T5E"
+			(at 26.67 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C22775"
+			(at 26.67 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "manf#" "0603WAF1000T5E"
+			(at 26.67 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=0603WAF1000T5E"
+			(at 26.67 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "https://www.mouser.com/c/?q=0603WAF1000T5E"
+			(at 26.67 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -10202,7 +11659,7 @@
 			(uuid "aef1a644-7add-456f-abb9-73501e603252")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "R9")
 					(unit 1)
@@ -10243,7 +11700,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_0603"
+		(property "Footprint" "Drumlight_PCB:R_0603"
 			(at -9.398 -58.42 90)
 			(hide yes)
 			(show_name no)
@@ -10265,7 +11722,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "10k 1% 0603 resistor"
 			(at 149.86 29.21 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10275,14 +11732,69 @@
 				)
 			)
 		)
-		(property "manf#" "WR06X1002FTL"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 149.86 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF1002T5E"
+			(at 149.86 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 149.86 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "manf#" "0603WAF1002T5E"
+			(at 149.86 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=0603WAF1002T5E"
+			(at 149.86 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "https://www.mouser.com/c/?q=0603WAF1002T5E"
+			(at 149.86 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -10293,7 +11805,7 @@
 			(uuid "6b96fab8-8ae6-4da6-b3c8-fd54f0969e9a")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "R1")
 					(unit 1)
@@ -10333,7 +11845,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Socket_Strips:Socket_Strip_Straight_1x15"
+		(property "Footprint" "Drumlight_PCB:Socket_Strip_Straight_1x15"
 			(at 252.73 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -10410,7 +11922,7 @@
 			(uuid "3bf46951-9e5b-49fc-a147-be41327c007c")
 		)
 		(instances
-			(project ""
+			(project "Drumlight_PCB"
 				(path "/25930533-36b4-4e53-b7f6-2ceec5937ae4"
 					(reference "P2")
 					(unit 1)

@@ -1,1 +1,30 @@
-{"meta":{"filename":"Drumlight_PCB.kicad_pro","version":3}}
+{
+  "board": {
+    "design_settings": {
+      "rule_severities": {
+        "copper_edge_clearance": "error",
+        "courtyards_overlap": "ignore",
+        "lib_footprint_mismatch": "ignore",
+        "pth_inside_courtyard": "ignore",
+        "silk_edge_clearance": "ignore",
+        "silk_over_copper": "ignore",
+        "silk_overlap": "ignore",
+        "starved_thermal": "ignore"
+      },
+      "rules": {
+        "min_copper_edge_clearance": 0.0,
+        "min_text_height": 0.5,
+        "min_text_thickness": 0.08
+      }
+    }
+  },
+  "erc": {
+    "rule_severities": {
+      "isolated_pin_label": "ignore"
+    }
+  },
+  "meta": {
+    "filename": "Drumlight_PCB.kicad_pro",
+    "version": 3
+  }
+}

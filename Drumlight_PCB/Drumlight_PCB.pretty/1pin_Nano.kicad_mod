@@ -1,0 +1,66 @@
+(footprint "1pin_Nano"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(locked yes)
+	(layer "F.Cu")
+	(descr "module 1 pin (ou trou mecanique de percage)")
+	(tags "DEV")
+	(property "Reference" "REF**"
+		(at 0 -2.032 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "9df6f310-8262-4a02-8f0d-1af5ec776bd4")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.125)
+			)
+		)
+	)
+	(property "Value" "1pin_Nano"
+		(at 0 2.032 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a057b366-840a-4179-b044-65c2e6043a02")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7ad66dda-b49c-47e2-82c7-90c57571d1b5")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f95a1aca-0432-4cc5-bb22-592dfba67e76")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 2.54 2.54)
+		(drill 1.778)
+		(layers "*.Cu" "*.Mask" "F.SilkS")
+		(remove_unused_layers no)
+		(uuid "32994a4b-0f75-4651-a41d-af38700cf054")
+	)
+	(embedded_fonts no)
+)
