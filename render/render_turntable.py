@@ -9,6 +9,9 @@ argv = sys.argv[sys.argv.index("--") + 1:]
 glb, out = argv[0], argv[1]
 frames = int(argv[2]) if len(argv) > 2 else 120
 still = len(argv) > 3
+if os.environ.get("DL_ANALYSIS"):
+    import json as _j
+    frames = len(_j.load(open(os.environ["DL_ANALYSIS"]))["env"])
 
 bpy.ops.wm.read_factory_settings(use_empty=True)
 bpy.ops.import_scene.gltf(filepath=glb)
@@ -89,21 +92,49 @@ rim = area("rim", (-1.4, 1.2, 0.9), 0.2, (0.2, 0.4, 1))
 fill = area("fill", (0.0, -1.6, 0.6), 0.05, (1, 0.7, 0.4))
 
 cols = [(1, 1, 1), (1, 0.15, 0.1), (0.1, 1, 0.2), (0.15, 0.25, 1), (1, 0.8, 0.1), (1, 1, 1)]
-for i, c in enumerate(cols):
-    f = 1 + round(i * frames / (len(cols) - 1))
-    rim.color = c
-    rim.keyframe_insert("color", frame=f)
-    key.energy = KEY_E * (0.35 if i % 2 else 1.0)
-    key.keyframe_insert("energy", frame=f)
-    fill.color = cols[(i + 2) % len(cols)]
-    fill.keyframe_insert("color", frame=f)
+AN = os.environ.get("DL_ANALYSIS")
+AUDIO = os.environ.get("DL_AUDIO")
+FPS = 30
+if AN:
+    # Audio-reactive: brightness <- amplitude envelope, hue <- spectral centroid (low=red .. high=blue)
+    import json, colorsys
+    a = json.load(open(AN))
+    FPS = int(a["fps"])
+    frames = len(a["env"])
+    smooth = 0.0
+    for i, (e, h, b) in enumerate(zip(a["env"], a["hue"], a["bands"])):
+        f = i + 1
+        smooth = e if e > smooth else smooth * 0.6 + e * 0.4  # fast attack, quick decay
+        lvl = min(smooth, 1.3) ** 2
+        rim.color = colorsys.hsv_to_rgb(h, 1.0, 1.0)
+        rim.energy = 0.04 + 0.7 * lvl
+        key.color = colorsys.hsv_to_rgb(h, 0.25, 1.0)
+        key.energy = 0.03 + 0.45 * lvl
+        fill.color = colorsys.hsv_to_rgb((h + 0.5) % 1.0, 0.9, 1.0)
+        fill.energy = 0.01 + 0.15 * b[2]
+        for l in (rim, key, fill):
+            l.keyframe_insert("color", frame=f)
+            l.keyframe_insert("energy", frame=f)
+else:
+    for i, c in enumerate(cols):
+        f = 1 + round(i * frames / (len(cols) - 1))
+        rim.color = c
+        rim.keyframe_insert("color", frame=f)
+        key.energy = KEY_E * (0.35 if i % 2 else 1.0)
+        key.keyframe_insert("energy", frame=f)
+        fill.color = cols[(i + 2) % len(cols)]
+        fill.keyframe_insert("color", frame=f)
 
 sc = bpy.context.scene
 sc.render.engine = "BLENDER_EEVEE"
 sc.frame_start, sc.frame_end = 1, frames
-sc.render.resolution_x, sc.render.resolution_y = 1280, 720
+sc.render.resolution_x, sc.render.resolution_y = (960, 540) if AN else (1280, 720)
 sc.view_settings.view_transform = "Standard"
-if still:
+if AN and still:
+    sc.frame_set(int(os.environ.get("DL_STILL_FRAME", "60")))
+    sc.render.filepath = out + "_still.png"
+    bpy.ops.render.render(write_still=True)
+elif still:
     sc.frame_set(1)
     sc.render.filepath = out + "_still.png"
     bpy.ops.render.render(write_still=True)
@@ -112,7 +143,13 @@ else:
     sc.render.image_settings.file_format = "FFMPEG"
     sc.render.ffmpeg.format = "MPEG4"
     sc.render.ffmpeg.codec = "H264"
-    sc.render.fps = 30
+    sc.render.fps = FPS
+    if AUDIO:
+        a0 = float(json.load(open(AN))["start"])
+        sc.sequence_editor_create()
+        strip = sc.sequence_editor.strips.new_sound("music", AUDIO, 1, 1 - int(round(a0 * FPS)))
+        sc.render.ffmpeg.audio_codec = "AAC"
+        sc.render.ffmpeg.audio_bitrate = 192
     sc.render.filepath = out + "_"
     bpy.ops.render.render(animation=True)
 
