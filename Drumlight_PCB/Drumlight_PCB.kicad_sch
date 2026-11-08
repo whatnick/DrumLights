@@ -3919,7 +3919,7 @@
 					)
 				)
 			)
-			(property "Value" "TLV2771"
+			(property "Value" "TLV9001"
 				(at 1.27 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -7353,7 +7353,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TLV2771"
+		(property "Value" "TLV9001"
 			(at 178.8414 38.227 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7407,7 +7407,7 @@
 				)
 			)
 		)
-		(property "MPN" "TLV2771CDBVR"
+		(property "MPN" "TLV9001IDBVR"
 			(at 170.18 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -7418,7 +7418,7 @@
 				)
 			)
 		)
-		(property "manf#" "TLV2771CDBVR"
+		(property "LCSC" "C398363"
 			(at 170.18 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -7429,7 +7429,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=TLV2771CDBVR"
+		(property "manf#" "TLV9001IDBVR"
 			(at 170.18 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -7440,7 +7440,18 @@
 				)
 			)
 		)
-		(property "Mouser" "https://www.mouser.com/c/?q=TLV2771CDBVR"
+		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=TLV9001IDBVR"
+			(at 170.18 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "https://www.mouser.com/c/?q=TLV9001IDBVR"
 			(at 170.18 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -7982,7 +7993,7 @@
 				)
 			)
 		)
-		(property "MPN" "MCP73831T-3ACI/OT"
+		(property "MPN" "MCP73831T-2ACI/OT"
 			(at 135.89 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -7993,7 +8004,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C625598"
+		(property "LCSC" "C424093"
 			(at 135.89 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -8004,7 +8015,7 @@
 				)
 			)
 		)
-		(property "manf#" "MCP73831T-3ACI/OT"
+		(property "manf#" "MCP73831T-2ACI/OT"
 			(at 135.89 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -8015,7 +8026,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=MCP73831T-3ACI/OT"
+		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=MCP73831T-2ACI/OT"
 			(at 135.89 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -8026,7 +8037,7 @@
 				)
 			)
 		)
-		(property "Mouser" "https://www.mouser.com/c/?q=MCP73831T-3ACI/OT"
+		(property "Mouser" "https://www.mouser.com/c/?q=MCP73831T-2ACI/OT"
 			(at 135.89 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -10599,7 +10610,7 @@
 				)
 			)
 		)
-		(property "Description" "Nano-Fit 2x2 right-angle header"
+		(property "Description" "Nano-Fit 1x4 right-angle header"
 			(at 87.63 45.72 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10620,7 +10631,7 @@
 				)
 			)
 		)
-		(property "MPN" "105314-1204"
+		(property "MPN" "105313-1204"
 			(at 87.63 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -10631,7 +10642,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C122399"
+		(property "LCSC" "C586244"
 			(at 87.63 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -10642,7 +10653,7 @@
 				)
 			)
 		)
-		(property "manf#" "105314-1204"
+		(property "manf#" "105313-1204"
 			(at 87.63 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -10653,7 +10664,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=105314-1204"
+		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=105313-1204"
 			(at 87.63 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -10664,7 +10675,7 @@
 				)
 			)
 		)
-		(property "Mouser" "https://www.mouser.com/c/?q=105314-1204"
+		(property "Mouser" "https://www.mouser.com/c/?q=105313-1204"
 			(at 87.63 45.72 0)
 			(hide yes)
 			(show_name no)

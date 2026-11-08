@@ -997,7 +997,7 @@
 				)
 			)
 		)
-		(property "Value" "TLV2771"
+		(property "Value" "TLV9001"
 			(at 0 2.9 180)
 			(layer "F.Fab")
 			(uuid "edb2f477-7f91-473e-813e-9e3b281a496e")
@@ -1042,7 +1042,7 @@
 				)
 			)
 		)
-		(property "MPN" "TLV2771CDBVR"
+		(property "MPN" "TLV9001IDBVR"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1054,7 +1054,19 @@
 				)
 			)
 		)
-		(property "manf#" "TLV2771CDBVR"
+		(property "LCSC" "C398363"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5d13749c-998c-402d-8997-19d4c4578205")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "manf#" "TLV9001IDBVR"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1066,7 +1078,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=TLV2771CDBVR"
+		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=TLV9001IDBVR"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1078,7 +1090,7 @@
 				)
 			)
 		)
-		(property "Mouser" "https://www.mouser.com/c/?q=TLV2771CDBVR"
+		(property "Mouser" "https://www.mouser.com/c/?q=TLV9001IDBVR"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2573,7 +2585,7 @@
 				)
 			)
 		)
-		(property "MPN" "MCP73831T-3ACI/OT"
+		(property "MPN" "MCP73831T-2ACI/OT"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2585,7 +2597,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C625598"
+		(property "LCSC" "C424093"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2597,7 +2609,7 @@
 				)
 			)
 		)
-		(property "manf#" "MCP73831T-3ACI/OT"
+		(property "manf#" "MCP73831T-2ACI/OT"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2609,7 +2621,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=MCP73831T-3ACI/OT"
+		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=MCP73831T-2ACI/OT"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2621,7 +2633,7 @@
 				)
 			)
 		)
-		(property "Mouser" "https://www.mouser.com/c/?q=MCP73831T-3ACI/OT"
+		(property "Mouser" "https://www.mouser.com/c/?q=MCP73831T-2ACI/OT"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5267,7 +5279,7 @@
 				)
 			)
 		)
-		(property "Description" "Nano-Fit 2x2 right-angle header"
+		(property "Description" "Nano-Fit 1x4 right-angle header"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5290,7 +5302,7 @@
 				)
 			)
 		)
-		(property "MPN" "105314-1204"
+		(property "MPN" "105313-1204"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5302,7 +5314,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C122399"
+		(property "LCSC" "C586244"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5314,7 +5326,7 @@
 				)
 			)
 		)
-		(property "manf#" "105314-1204"
+		(property "manf#" "105313-1204"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5326,7 +5338,7 @@
 				)
 			)
 		)
-		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=105314-1204"
+		(property "DigiKey" "https://www.digikey.com/en/products/result?keywords=105313-1204"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5338,7 +5350,7 @@
 				)
 			)
 		)
-		(property "Mouser" "https://www.mouser.com/c/?q=105314-1204"
+		(property "Mouser" "https://www.mouser.com/c/?q=105313-1204"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)

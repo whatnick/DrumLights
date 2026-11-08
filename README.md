@@ -33,7 +33,7 @@ This design was featured and used in the **Adelaide Fringe Festival parade**.
 - ERC and DRC (with schematic parity) pass with 0 violations in KiCad 10. Project rules in `Drumlight_PCB.kicad_pro` relax checks that are inherent to a Nano shield: the P3–P6 mounting pins sit on the board edge, and the Nano sockets overlap courtyards and silkscreen.
 - Footprints live in the project library `Drumlight_PCB.pretty`.
 - Q1–Q3 (BSS306N) use a custom `SOT-23` footprint whose pads are numbered D=1 (lone pad), G=2, S=3 to match the `Q_NMOS_DGS` symbol. This is not the JEDEC order (G1 S2 D3), but physically the drain pin lands on the drain net. Don't swap in a generic SOT-23 footprint without re-checking.
-- `Drumlight_PCB/Drumlight_PCB_bom.csv` is the sourced BOM (manufacturer, MPN, LCSC and DigiKey/Mouser search links), exported from the schematic fields. Check live stock before ordering: D3 (`LRTB GFTM`) has no Mouser/DigiKey listing, and U1 and RV1 have no LCSC part. See the cost-down table in `docs/SOURCING_AND_BUSINESS_CASE.md`. C2/C3 are now `CL10A475KO8NNNC`, SW1 is `CHS-01TB` and D2 is `B5819W SL`.
+- `Drumlight_PCB/Drumlight_PCB_bom.csv` is the sourced BOM (manufacturer, MPN, LCSC and DigiKey/Mouser search links), exported from the schematic fields. Check live stock before ordering: D3 (`LRTB GFTM`) has no Mouser/DigiKey listing and RV1 has no LCSC part. See the cost-down table in `docs/SOURCING_AND_BUSINESS_CASE.md`. C2/C3 are now `CL10A475KO8NNNC`, SW1 is `CHS-01TB`, D2 is `B5819W SL`, U1 is `TLV9001IDBVR`, U2 is the 4.2 V `MCP73831T-2ACI/OT` (use `-3ACI` only for 4.35 V cells) and LEDS1 is the single-row `105313-1204`.
 
 ## Getting started
 

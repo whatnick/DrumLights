@@ -3916,7 +3916,7 @@
 				)
 			)
 		)
-		(property "Value" "TLV2771"
+		(property "Value" "TLV9001"
 			(at 1.27 -3.81 0)
 			(show_name no)
 			(do_not_autoplace no)
